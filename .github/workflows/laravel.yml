@@ -27,6 +27,8 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sqlite
+    - name: Install Node Dependecies
+      run: npm install
 
     - name: Build Assets
       run: npm run build
